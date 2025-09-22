@@ -89,7 +89,7 @@ Note: config.properties is ignored in Git for security.
    
 ### Author
 Mona Kumari
-QA Engineer | API Automation Enthusiast
+(QA Engineer | API Automation Enthusiast)
 
 **License**
 This project is open-source for educational purposes.
