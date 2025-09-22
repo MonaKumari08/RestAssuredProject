@@ -12,7 +12,7 @@ public class UpdateUserTest extends BaseTest {
         String requestBody = "{ \"name\": \"Mona\", \"job\": \"Senior QA\" }";
 
         given()
-        	.queryParam("api_key", BaseTest.apiKey)
+        	.queryParam("api_key", BaseTest.bearerApiKey)
             .header("Content-Type", "application/json")
             .body(requestBody)
         .when()

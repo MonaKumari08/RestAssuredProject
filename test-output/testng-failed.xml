@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.CreateUserExcelDataDrivenTest">
+      <class name="testcases.BasicAuthTest">
         <methods>
-          <include name="createUserFromExcel" invocation-numbers="0 1 2"/>
+          <include name="init"/>
+          <include name="getUser"/>
           <include name="setup"/>
+          <include name="updateUser"/>
+          <include name="deleteUser"/>
+          <include name="createUser"/>
         </methods>
-      </class> <!-- testcases.CreateUserExcelDataDrivenTest -->
+      </class> <!-- testcases.BasicAuthTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

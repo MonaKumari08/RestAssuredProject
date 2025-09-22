@@ -19,7 +19,7 @@ public class CreateUserExcelDataDrivenTest extends BaseTest {
         String requestBody = "{ \"name\": \"" + name + "\", \"job\": \"" + job + "\" }";
 
         given()
-            .queryParam("api_key", BaseTest.apiKey)
+            .queryParam("api_key", BaseTest.bearerApiKey)
             .header("Content-Type", "application/json")
             .body(requestBody)
         .when()

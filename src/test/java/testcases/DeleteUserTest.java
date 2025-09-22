@@ -8,7 +8,7 @@ public class DeleteUserTest extends BaseTest {
     @Test
     public void deleteUser() {
     	given()
-    	    .queryParam("api_key", BaseTest.apiKey)
+    	    .queryParam("api_key", BaseTest.bearerApiKey)
         .when()
             .delete("/users/2")
         .then()
