@@ -5,34 +5,34 @@ This project is an **API automation framework** using **Rest Assured**, **TestNG
 It demonstrates CRUD operations (Create, Read, Update, Delete), authentication handling, data-driven testing, and JSON schema validation.
 
 ## Project Structure
+```text
 RestAssuredProject
 │
 ├─ pom.xml
 ├─ README.md
 ├─ src
-│ ├─ main
-│ │ └─ java
-│ │ └─ (empty)
-│ └─ test
-│ ├─ java
-│ │ └─ tests
-│ │ ├─ BaseTest.java
-│ │ ├─ GetUserTest.java
-│ │ ├─ CreateUserTest.java
-│ │ ├─ UpdateUserTest.java
-│ │ ├─ DeleteUserTest.java
-│ │ ├─ CreateUserDataDrivenTest.java
-│ │ ├─ CreateUserExcelDataDrivenTest.java
-│ │ ├─ BasicAuthTest.java
-│ │ └─ BearerAuthTest.java
-│ │
-│ └─ utils
-│ └─ ExcelUtils.java
-│
-└─ resources
-├─ getUserSchema.json
-├─ userData.xlsx
-└─ config.properties (excluded in .gitignore for security)
+│   ├─ main
+│   │   └─ java
+│   │       └─ (empty)
+│   └─ test
+│       ├─ java
+│       │   └─ tests
+│       │       ├─ BaseTest.java
+│       │       ├─ GetUserTest.java
+│       │       ├─ CreateUserTest.java
+│       │       ├─ UpdateUserTest.java
+│       │       ├─ DeleteUserTest.java
+│       │       ├─ CreateUserDataDrivenTest.java
+│       │       ├─ CreateUserExcelDataDrivenTest.java
+│       │       ├─ BasicAuthTest.java
+│       │       ├─ BearerAuthTest.java
+│       │       └─ utils
+│       │           └─ ExcelUtils.java
+│       │
+│       └─ resources
+│           ├─ getUserSchema.json
+│           ├─ userData.xlsx
+│           └─ config.properties   # excluded in .gitignore for security
 
 ## Features
 
@@ -62,6 +62,54 @@ RestAssuredProject
 - **Maven & TestNG Integration**
   - Run all tests with Maven Surefire plugin  
   - Supports test grouping and parallel execution
+
+## Features
+
+- **CRUD Operations**
+  - `GET /users` → Retrieve user details  
+  - `POST /users` → Create new user  
+  - `PUT /users/{id}` → Update existing user  
+  - `DELETE /users/{id}` → Delete user  
+
+- **Authentication Testing**
+  - Basic Auth  
+  - Bearer Token / API key (query parameter)  
+
+- **Data-Driven Testing**
+  - JSON and Excel-based test data  
+  - Supports multiple test cases from a single template  
+
+- **Assertions**
+  - Status code validation  
+  - Response body validation  
+  - Header validation  
+  - Response time checks  
+
+- **JSON Schema Validation**
+  - Ensures correct API response structure  
+
+- **Maven & TestNG Integration**
+  - Run all tests with Maven Surefire plugin  
+  - Supports test grouping and parallel execution  
+
+## Sample Test Snippet
+
+@Test
+public void createUser() {
+    String requestBody = "{ \"name\": \"Mona\", \"job\": \"QA\" }";
+
+    given()
+        .queryParam("api_key", BaseTest.apiKey)   // API key from config.properties
+        .header("Content-Type", "application/json")
+        .body(requestBody)
+    .when()
+        .post("/users")
+    .then()
+        .statusCode(201)
+        .body("name", equalTo("Mona"))
+        .body("job", equalTo("QA"))
+        .log().all();
+}
 
 ## Getting Started
 
