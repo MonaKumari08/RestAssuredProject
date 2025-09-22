@@ -34,35 +34,6 @@ RestAssuredProject
 │           ├─ userData.xlsx
 │           └─ config.properties   # excluded in .gitignore for security
 
-## **Features**
-
-- **CRUD Operations**
-  - `GET /users` → Retrieve user details  
-  - `POST /users` → Create new user  
-  - `PUT /users/{id}` → Update existing user  
-  - `DELETE /users/{id}` → Delete user  
-
-- **Authentication Testing**
-  - Basic Auth  
-  - Bearer Token / API key (query parameter)  
-
-- **Data-Driven Testing**
-  - JSON and Excel-based test data  
-  - Supports multiple test cases from a single template  
-
-- **Assertions**
-  - Status code validation  
-  - Response body validation  
-  - Header validation  
-  - Response time checks  
-
-- **JSON Schema Validation**
-  - Ensures correct API response structure  
-
-- **Maven & TestNG Integration**
-  - Run all tests with Maven Surefire plugin  
-  - Supports test grouping and parallel execution
-
 ## Features
 
 - **CRUD Operations**
