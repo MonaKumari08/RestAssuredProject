@@ -33,7 +33,7 @@ RestAssuredProject
 │           ├─ getUserSchema.json
 │           ├─ userData.xlsx
 │           └─ config.properties   # excluded in .gitignore for security
-
+```
 ## Features
 
 - **CRUD Operations**
