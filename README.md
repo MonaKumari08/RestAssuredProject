@@ -34,7 +34,7 @@ RestAssuredProject
 │           ├─ userData.xlsx
 │           └─ config.properties   # excluded in .gitignore for security
 
-## Features
+## **Features**
 
 - **CRUD Operations**
   - `GET /users` → Retrieve user details  
