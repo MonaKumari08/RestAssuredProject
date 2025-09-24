@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import petstoreAPI_testcases.PetStoreData;
+import petstoreAPI_testcases.UserTest.PetStoreData;
 
 public class DeleteOrderTest {
 

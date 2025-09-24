@@ -27,6 +27,7 @@ public class BaseTest {
 
    
     public void setup(String authType) throws IOException {
+    	
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
         prop.load(fis);

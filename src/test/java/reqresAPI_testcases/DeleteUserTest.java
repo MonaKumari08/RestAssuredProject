@@ -1,10 +1,16 @@
 package reqresAPI_testcases;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
 public class DeleteUserTest extends BaseTest {
 
+	@BeforeClass
+    public void init() throws Exception {
+        setup("bearer");
+    }
+	
     @Test
     public void deleteUser() {
     	given()

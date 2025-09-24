@@ -1,4 +1,4 @@
-package petstoreAPI_testcases;
+package petstoreAPI_testcases.UserTest;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

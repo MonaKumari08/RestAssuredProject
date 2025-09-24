@@ -1,5 +1,6 @@
 package reqresAPI_testcases;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import testcases.utils.ExcelUtils;
@@ -8,6 +9,11 @@ import static org.hamcrest.Matchers.*;
 
 public class CreateUserExcelDataDrivenTest extends BaseTest {
 
+	@BeforeClass
+    public void init() throws Exception {
+        setup("bearer");
+    }
+	
     @DataProvider(name = "excelData")
     public Object[][] getData() throws Exception {
         return ExcelUtils.getExcelData("Sheet1");

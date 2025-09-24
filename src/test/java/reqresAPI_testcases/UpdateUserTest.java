@@ -1,12 +1,18 @@
 package reqresAPI_testcases;
 
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class UpdateUserTest extends BaseTest {
 
+	@BeforeClass
+    public void init() throws Exception {
+        setup("bearer");
+    }
+	
     @Test
     public void updateUser() {
         String requestBody = "{ \"name\": \"Mona\", \"job\": \"Senior QA\" }";

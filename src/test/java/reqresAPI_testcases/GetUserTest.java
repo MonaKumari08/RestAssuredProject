@@ -1,13 +1,22 @@
 package reqresAPI_testcases;
 
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import petstoreAPI_testcases.UserTest.PetStoreData;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class GetUserTest extends BaseTest {
 
+	@BeforeClass
+    public void init() throws Exception {
+        setup("bearer");
+    }
+	
     @Test
     public void getUsers() {
         given()

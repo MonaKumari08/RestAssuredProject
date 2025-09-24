@@ -12,6 +12,7 @@ public class BearerTokenAuthTest extends BaseTest {
 	    setup("bearer"); // explicitly pass auth type
 	 
 	 }
+	 
 	@Test(priority = 1)
     public void getUserDetails() {
     	

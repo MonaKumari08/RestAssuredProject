@@ -1,51 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-23T12:52:57 IST" name="PetStoreAPI Suite" finished-at="2025-09-23T12:53:08 IST" duration-ms="11772">
+  <suite started-at="2025-09-23T17:50:26 IST" name="Default suite" finished-at="2025-09-23T17:50:28 IST" duration-ms="2504">
     <groups>
     </groups>
-    <test started-at="2025-09-23T12:52:57 IST" name="PetTest" finished-at="2025-09-23T12:53:08 IST" duration-ms="11772">
-      <class name="petstoreAPI_testcases.PetTest.FindPetByStatusTest">
-        <test-method signature="findPetByStatus()[pri:0, instance:petstoreAPI_testcases.PetTest.FindPetByStatusTest@4802796d]" started-at="2025-09-23T12:52:59 IST" name="findPetByStatus" finished-at="2025-09-23T12:53:02 IST" duration-ms="2415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findPetByStatus -->
-      </class> <!-- petstoreAPI_testcases.PetTest.FindPetByStatusTest -->
-      <class name="petstoreAPI_testcases.PetTest.DeletePetTest">
-        <test-method signature="deletePet()[pri:6, instance:petstoreAPI_testcases.PetTest.DeletePetTest@3e694b3f]" started-at="2025-09-23T12:53:07 IST" name="deletePet" finished-at="2025-09-23T12:53:08 IST" duration-ms="1371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletePet -->
-      </class> <!-- petstoreAPI_testcases.PetTest.DeletePetTest -->
-      <class name="petstoreAPI_testcases.PetTest.CreatePetTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:petstoreAPI_testcases.PetTest.CreatePetTest@235834f2]" started-at="2025-09-23T12:52:57 IST" name="init" finished-at="2025-09-23T12:52:57 IST" duration-ms="242" status="PASS">
+    <test started-at="2025-09-23T17:50:26 IST" name="Default test" finished-at="2025-09-23T17:50:28 IST" duration-ms="2504">
+      <class name="reqresAPI_testcases.CreateUserTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:reqresAPI_testcases.CreateUserTest@4c583ecf]" started-at="2025-09-23T17:50:26 IST" name="init" finished-at="2025-09-23T17:50:28 IST" duration-ms="2017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="addPet()[pri:1, instance:petstoreAPI_testcases.PetTest.CreatePetTest@235834f2]" started-at="2025-09-23T12:52:57 IST" name="addPet" finished-at="2025-09-23T12:52:59 IST" duration-ms="2362" status="PASS">
+        <test-method signature="createUser()[pri:0, instance:reqresAPI_testcases.CreateUserTest@4c583ecf]" started-at="2025-09-23T17:50:28 IST" name="createUser" finished-at="2025-09-23T17:50:28 IST" duration-ms="459" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addPet -->
-      </class> <!-- petstoreAPI_testcases.PetTest.CreatePetTest -->
-      <class name="petstoreAPI_testcases.PetTest.GetPetByIDTest">
-        <test-method signature="getPetById()[pri:0, instance:petstoreAPI_testcases.PetTest.GetPetByIDTest@34123d65]" started-at="2025-09-23T12:53:02 IST" name="getPetById" finished-at="2025-09-23T12:53:03 IST" duration-ms="1512" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getPetById -->
-      </class> <!-- petstoreAPI_testcases.PetTest.GetPetByIDTest -->
-      <class name="petstoreAPI_testcases.PetTest.UploadImageTest">
-        <test-method signature="uploadImage()[pri:0, instance:petstoreAPI_testcases.PetTest.UploadImageTest@65fb9ffc]" started-at="2025-09-23T12:53:05 IST" name="uploadImage" finished-at="2025-09-23T12:53:07 IST" duration-ms="2353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadImage -->
-      </class> <!-- petstoreAPI_testcases.PetTest.UploadImageTest -->
-      <class name="petstoreAPI_testcases.PetTest.UpdatePetTest">
-        <test-method signature="updatePet()[pri:0, instance:petstoreAPI_testcases.PetTest.UpdatePetTest@59474f18]" started-at="2025-09-23T12:53:03 IST" name="updatePet" finished-at="2025-09-23T12:53:05 IST" duration-ms="1470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatePet -->
-      </class> <!-- petstoreAPI_testcases.PetTest.UpdatePetTest -->
-    </test> <!-- PetTest -->
-  </suite> <!-- PetStoreAPI Suite -->
+        </test-method> <!-- createUser -->
+      </class> <!-- reqresAPI_testcases.CreateUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

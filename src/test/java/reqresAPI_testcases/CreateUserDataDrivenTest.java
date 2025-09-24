@@ -1,5 +1,6 @@
 package reqresAPI_testcases;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
@@ -7,6 +8,11 @@ import static org.hamcrest.Matchers.*;
 
 public class CreateUserDataDrivenTest extends BaseTest {
 
+	@BeforeClass
+    public void init() throws Exception {
+        setup("bearer");
+    }
+	
     @DataProvider(name = "userData")
     public Object[][] userData() {
         return new Object[][] {
